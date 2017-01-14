@@ -18,7 +18,7 @@ class CreateNotesTable extends Migration
             $table->string('fqdn');
             $table->integer('port')->default('443');
             $table->text('memo')->nullable();
-            $table->integer('daysleft');
+            $table->integer('daysleft')->nullable();
             $table->timestamps();
         });
     }

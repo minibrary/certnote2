@@ -33,18 +33,18 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        $not = new note([
-            'name' => $request->get('name'),
+        $note = new note([
+            'fqdn' => $request->get('fqdn'),
             'port' => $request->get('port'),
             'memo' => $request->get('memo'),
         ]);
         $user = \Auth::user();
-        $not->user()->associate($user->id);
-        $not->save();
+        $note->user()->associate($user->id);
+        $note->save();
         \Log::info('Note 등록 성공',
             ['user-id'=> $user->id, 'note-id'=>$note->id]
         );
-        return redirect('/list')
+        return redirect('/note')
             ->with('message', $note->name . ' 이 생성되었습니다.');
     }
     /**
