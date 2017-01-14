@@ -25,3 +25,40 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+## Prerequisite
+
+* for Laravel (v5.3)
+⋅⋅* PHP >= 5.6.4
+⋅⋅* OpenSSL PHP Extension
+⋅⋅* PDO PHP Extension
+⋅⋅* Mbstring PHP Extension
+⋅⋅* Tokenizer PHP Extension
+⋅⋅* XML PHP Extension
+
+* for Gentelella (v1.3)
+⋅⋅* Node.JS for NPM
+
+## Installation (test)
+```
+git clone https://github.minibrary.com/minibrary/certnote.github
+```
+```
+cd certnote
+```
+
+```
+composer update
+```
+
+```
+cp .env.example .env
+```
+
+```
+php artisan key:gen
+npm install --global bower gulp
+npm install
+bower install
+gulp
+```
