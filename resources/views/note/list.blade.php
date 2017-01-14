@@ -6,8 +6,13 @@
 
 @push('stylesheets')
 
+<!-- Datatables -->
 <link href="{{ asset('css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/buttons.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/fixedHeader.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/responsive.bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/scroller.bootstrap.min.css') }}" rel="stylesheet">
+
 
 @endpush
 
@@ -84,8 +89,22 @@
 
 @section('js')
 
+<!-- Datatables -->
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/dataTables.bootstrap.min.js"></script>
 <script src="js/dataTables.buttons.min.js"></script>
 <script src="js/buttons.bootstrap.min.js"></script>
+<script src="js/buttons.flash.min.js"></script>
+<script src="js/buttons.html5.min.js"></script>
+<script src="js/buttons.print.min.js"></script>
+<script src="js/dataTables.fixedHeader.min.js"></script>
+<script src="js/dataTables.keyTable.min.js"></script>
+<script src="js/dataTables.responsive.min.js"></script>
+<script src="js/responsive.bootstrap.js"></script>
+<script src="js/dataTables.scroller.min.js"></script>
+<script src="js/jszip.min.js"></script>
+<script src="js/pdfmake.min.js"></script>
+<script src="js/vfs_fonts.js"></script>
 
 @endsection
 

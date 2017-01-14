@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        @yield('js')
+
 
         <!-- jQuery -->
         <script src="{{ asset("js/jquery.min.js") }}"></script>
@@ -43,6 +43,14 @@
         <script src="{{ asset("js/bootstrap.min.js") }}"></script>
         <!-- Custom Theme Scripts -->
         <script src="{{ asset("js/gentelella.min.js") }}"></script>
+        <!-- FastClick -->
+        <script src="js/fastclick.js"></script>
+        <!-- NProgress -->
+        <script src="js/nprogress.js"></script>
+        <!-- iCheck -->
+        <script src="js/icheck.min.js"></script>
+
+        @yield('js')
 
         @yield('scripts')
 
