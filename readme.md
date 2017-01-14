@@ -29,15 +29,15 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Prerequisite
 
 * for Laravel (v5.3)
-⋅⋅* PHP >= 5.6.4
-⋅⋅* OpenSSL PHP Extension
-⋅⋅* PDO PHP Extension
-⋅⋅* Mbstring PHP Extension
-⋅⋅* Tokenizer PHP Extension
-⋅⋅* XML PHP Extension
+  * PHP >= 5.6.4
+  * OpenSSL PHP Extension
+  * PDO PHP Extension
+  * Mbstring PHP Extension
+  * Tokenizer PHP Extension
+  * XML PHP Extension
 
 * for Gentelella (v1.3)
-⋅⋅* Node.JS for NPM
+  * Node.JS for NPM
 
 ## Installation (test)
 ```
