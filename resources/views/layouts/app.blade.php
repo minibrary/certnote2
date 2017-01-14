@@ -35,6 +35,8 @@
             </div>
         </div>
 
+        @yield('js')
+
         <!-- jQuery -->
         <script src="{{ asset("js/jquery.min.js") }}"></script>
         <!-- Bootstrap -->
@@ -42,7 +44,7 @@
         <!-- Custom Theme Scripts -->
         <script src="{{ asset("js/gentelella.min.js") }}"></script>
 
-        @stack('scripts')
+        @yield('scripts')
 
         @include('includes/footer')
 

@@ -14,7 +14,7 @@ var elixir = require('laravel-elixir');
 // Gentelella vendors path : vendor/bower_components/gentelella/vendors
 
 elixir(function(mix) {
-    
+
     /********************/
     /* Copy Stylesheets */
     /********************/
@@ -28,6 +28,12 @@ elixir(function(mix) {
     // Gentelella
     mix.copy('vendor/bower_components/gentelella/build/css/custom.min.css', 'public/css/gentelella.min.css');
 
+    // datatables-butoons-bs
+    mix.copy('vendor/bower_components/gentelella/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css', 'public/css/buttons.bootstrap.min.css');
+
+    // datatables-bs
+    mix.copy('vendor/bower_components/gentelella/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css', 'public/css/dataTables.bootstrap.min.css');
+
     /****************/
     /* Copy Scripts */
     /****************/
@@ -40,6 +46,15 @@ elixir(function(mix) {
 
     // Gentelella
     mix.copy('vendor/bower_components/gentelella/build/js/custom.min.js', 'public/js/gentelella.min.js');
+
+    // datatables-buttons-bs
+    mix.copy('vendor/bower_components/gentelella/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js', 'public/js/buttons.bootstrap.min.js');
+
+    // datatables-buttons
+    mix.copy('/home/mini/certnote/vendor/bower_components/gentelella/vendors/datatables.net-buttons/js/dataTables.buttons.min.js', 'public/js/dataTables.buttons.min.js');
+
+    // datatables-bs
+    mix.copy('vendor/bower_components/gentelella/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js', 'public/js/dataTables.bootstrap.min.js');
 
     /**************/
     /* Copy Fonts */
