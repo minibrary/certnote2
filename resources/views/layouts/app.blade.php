@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Certnote</title>
+        @yield('title')
 
         <!-- Bootstrap -->
         <link href="{{ asset("css/bootstrap.min.css") }}" rel="stylesheet">
@@ -43,6 +43,8 @@
         <script src="{{ asset("js/gentelella.min.js") }}"></script>
 
         @stack('scripts')
+
+        @include('includes/footer')
 
     </body>
 </html>
