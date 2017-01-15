@@ -61,6 +61,7 @@
                   <th>MEMO</th>
                   <th>Days Left</th>
                   <th>Updated</th>
+                  <th>Action</th>
                 </tr>
               </thead>
 
@@ -74,6 +75,19 @@
                   <td>{{$note->memo}}</td>
                   <td>{{$note->daysleft}}</td>
                   <td>{{$note->updated_at}}</td>
+                  <td>
+                    <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default" aria-label="Center Align">
+                      <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" aria-label="Center Align">
+                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" aria-label="Center Align">
+                      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  </td>
                 </tr>
               @endforeach
               </tbody>
